@@ -1,0 +1,245 @@
+/* 
+#  .................
+#  ··_______________
+#  ·/·___/·___/·___/
+#  /·/__(__··|__··)·
+#  \___/____/____/··
+#  .................
+
+PALETA DE COLORES
+nav background-color = #7ACC2D  verde claro
+nav 
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+/******************** VARIABLES ********************/
+:root {
+--green-color: #7ACC2D;
+--white-color: white;
+--black-color: #313337;
+/* Tipografía */
+--normal: 12px;
+/* Espaciado */
+--space: 10px;
+--space-2: 20px;
+/* Box shadow */
+/* --box: 0 0 2px #C1BCBC; */
+--box: 0 0 2px 1px #E6E5E9;
+}
+
+/******************** ETIQUETAS O TAGS ********************/
+html,body {
+  padding: 0px;
+  margin: 0px;
+  font-size: var(--normal);
+  font-family: 'Open Sans', sans-serif;
+}
+
+p, label {
+  font-size: var(--normal);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 100%; Agregado */
+  padding: var(--space);
+  /* min-height: 60px; Agregado */
+  background-color: var(--green-color);
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  padding-left: var(--normal);
+  list-style: none;
+}
+
+nav li a {
+  text-decoration: none;
+  color: var(--black-color);
+  font-size: var(--normal); /* Agregado */
+}
+
+nav li a:hover {
+  color: var(--white-color);
+}
+
+/******************** Main section ********************/
+
+.main_section {
+  text-align: center;
+  padding: 15%;
+}
+
+/******************** Products ********************/
+
+.products {
+  background-image: url('../images/curve.png');
+  padding: 15%;
+  background-position: center top;
+  background-repeat: no-repeat; /* Agregado */
+  display: flex;
+  height: 95px; /* max-height: 50px; modificado */
+  background-size: cover;
+}
+
+.product {
+  padding: var(--space-2);
+  margin-top: -226px;
+}
+
+.product .content {
+  background-color: var(--white-color);
+  padding: 20px;
+  border-radius: 3px; /* Agregado */
+  box-shadow: var(--box);
+}
+
+.img_content {
+  text-align: center;
+}
+
+.main_button {
+  padding: var(--space);
+  background-color: var(--green-color);
+  width: 100%;
+  border: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  color: var(--white-color);
+  font-size: var(--normal);
+}
+
+.main_button:hover {
+  background-color: #5E9E22;
+}
+
+/******************** Benefits ********************/
+
+.benefits {
+  /* max-height: 50px; */
+  display: flex;
+  padding: 10%;
+  /* justify-content: space-between; */
+}
+
+.benefit {
+  padding: 20px; /* padding: 0 90px; modificado */
+  text-align: center; /* Agregado */
+}
+
+/* .benefit_container {
+  text-align: center;
+}
+
+.img_benefit_container {
+  text-align: center;
+} ELIMINADO */
+
+.benefit img {
+  max-height: 100px;
+}
+
+.benefit_container h3 {
+  font-size: 16px;
+} 
+
+.benefit_container p {
+  text-align: justify;
+}
+
+/* .mentions_title {
+  text-align: center;
+  font-size: 22px;
+  border-top: 1px solid #EEEEEE;
+  padding: 80px 0 0;
+} */
+
+/******************** Mentions ********************/
+
+h2.mentions_title {
+  /* margin: 0; */
+  text-align: center;
+}
+
+.mentions {
+  display: flex;
+  padding: 5%; /* padding: 5% 11%; 
+  justify-content: space-between; */
+}
+
+.mention img { /* Agregado */
+  width: 100%;
+}
+
+.mention {
+  /* width: 239px; */
+  /* height: 105px; */
+  padding: var(--space);
+}
+
+.mention_container {
+  box-shadow: var(--box);
+}
+
+.detail_mention_container {
+  /* background-color: var(--white-color);
+  box-shadow: 0 0 3px 2px #E6E5E9;
+  margin-top: -3px; */
+  padding: var(--space);/* 6px; */
+}
+
+.detail_mention_container h3 {
+  margin: 0px 0;
+  font-size: 1.5em;
+}
+
+/******************** Venta ********************/
+
+.modulo_pago {
+  background-color: var(--white-color);
+  box-shadow: var(--box);
+  padding: var(--space);
+}
+
+.modulo_pago_images {
+  max-width: 150px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.data {
+  margin-top: var(--space);
+  width: 100%;
+  height: 35px;
+  border-radius: 2px;
+  border: 1px solid var(--black-color);
+  /* Como no estaban respetando el padding del box */
+  box-sizing: border-box;
+}
+
+.modulo_pago .main_button {
+  margin-top: var(--space);
+}
+
+/******************** Footer ********************/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--normal); /* Adicional */
+  background-color: var(--black-color);
+  padding: var(--space);
+  color: var(--white-color);
+  /* height: 40px;
+  align-items: center; */
+}
+
+.contact a {
+  color: var(--green-color);
+  text-decoration: none;
+}
